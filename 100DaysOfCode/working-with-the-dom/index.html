@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title></title>
+
+    </head>
+    <style>
+
+     #div1 {transition-timing-function: linear;}
+     #div2 {transition-timing-function: ease;}
+     #div3 {transition-timing-function: ease-in;}
+     #div4 {transition-timing-function: ease-out;}
+     #div5 {transition-timing-function: ease-in-out;}
+
+     div:hover {
+    width: 300px;
+     }
+
+     #myDiv{
+         padding: 80px;
+         background: pink;
+     }
+     #myDiv2{
+         padding: 80px;
+         background: pink;
+     }
+     #myDiv,#myDiv2{
+        border: 1px solid;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     body{
+       text-align: center;
+     }
+    /* #demo{
+        padding: 70px;
+        width: 4%;
+        border:2px solid  red;
+        background: yellow;
+        text-align: center;
+        margin-right: auto;
+
+        margin-left: auto;
+        height: 100px;
+        transition: width 5s,height 5s;
+    } */
+    /* #demo:hover{
+        width: 100%;
+        height: 200px;
+        color: green;
+        border:30px solid green;
+        padding: 10px;
+    } */
+
+
+
+    </style>
+    <style>
+        #myContainer{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: darkseagreen;
+
+        }
+        #myAnimation{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: maroon;
+        }
+        #item{
+            background: blue;
+            position: absolute;
+            height: 75px;
+            width: 200px;
+            margin: 100px;
+        }
+    </style>
+    <body>
+        <!-- <div id="myDiv">
+            <p id="myP">how much would a wood chuck wood if a woodchuck could chuck wood</p>
+        </div>
+        <br>
+        <div id="myDiv2">
+            <p id="myP2">how much would a wood chuck wood if a woodchuck could chuck wood</p>
+        </div><br> -->
+
+        <!-- <p id="demo"></p>
+        <center><input type="button" value="close window" onclick="newWin.close()"></center>
+        <center><input type="button" value="move window" onclick="newWin.move()"></center>
+        <center><a href="http://carnes.cc" target="newWindow" translate="yes">my boss site</a></center>
+ -->
+         <p>
+             <button onclick="myMoves()">click me</button>
+         </p>
+
+         <div id="myContainer">
+            <div id="myAnimation"></div>
+            <div id="item"></div>
+         </div>
+        <!-- <script src="./window.js"></script> -->
+        <!-- <script src="./eventlisteners.js" async="true"></script> -->
+    </body>
+    <script src="./cookies.js"></script>
+    <!-- <script src="./dom-animation.js"></script> -->
+</html>

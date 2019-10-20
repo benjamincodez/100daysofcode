@@ -1,0 +1,72 @@
+ 
+ json JAVASCRIPT OBJECT NOTATION
+...................................
+ working with Json strings
+...................................
+
+
+{"firstName":"john","lastName":"Doe"};
+
+ JSON arrays
+ ..................
+
+"employees":[
+    {"firstName":"John","lstaName":"Doe"},
+    {"firstName":"Anna","lastName":"Smith"},
+    {"firstName":"benjamin","lastName":"olson"}
+
+];
+.............................................................
+ working with json within javascript arrays and objects
+.............................................................
+
+let employees = [
+    {"firstName":"John","lstaName":"Doe"},
+    {"firstName":"Anna","lastName":"Smith"},
+    {"firstName":"benjamin","lastName":"olson"}
+
+];
+
+.............................
+ accessing the json file
+ returns john doe
+..............................
+
+employees[0].firstName + " " +employees[0].lastName;
+
+
+ can also be done this way
+employees[0]["firstName"] + " " + employees[0]["lastName"];
+
+ modifying data in json format
+employees[0].firstName = "rightouscoder";
+
+ another way of mdifying data in a json file is
+employees[0]["lastName"] = "benjamincodes";
+
+
+................................................
+ converting a json file to objects in javacsript
+................................................
+ js string containg json syntax
+................................................
+
+
+let text = '{ "employees" :[' + 
+    '{"firstName":"benjamin","lastName":"olson"},' +
+    '{"firstName":"Anna","lastName":"Smith"},' +
+    '{"firstName":"John","lastName":"Doe" } ]}'
+
+ the js way is of converting json to js object
+...............................................
+let obj = JSON.parse(text);
+...........................
+............................
+ for older browsers
+..............................
+
+var obj = eval("("+ text +")")
+
+....................................
+ its better to use json pasers 
+ .....................................
